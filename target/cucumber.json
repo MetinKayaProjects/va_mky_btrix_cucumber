@@ -1,0 +1,162 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-08-24T02:19:45.608Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2540492197,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Create new task",
+        "description": "",
+        "id": "tasks-menu;create-new-task",
+        "after": [
+          {
+            "result": {
+              "duration": 3538791,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 94339018,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am on the login page",
+            "match": {
+              "location": "LoginStepDefs.i_am_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1885403523,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I login as a \"helpdesk\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"helpdesk\"",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginStepDefs.i_login_as_a(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000828573,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on the tasks button",
+            "match": {
+              "location": "ActivityStreamStepDefs.i_click_on_the_tasks_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 730105801,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on the new task button",
+            "match": {
+              "location": "MyTasksStepDefs.i_click_on_the_new_task_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 344493135,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I write in the thingsToDo title box",
+            "match": {
+              "location": "MyTasksStepDefs.i_write_in_the_thingsToDo_title_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139377031,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I write in the bodyBox below the thingsToDo title box",
+            "match": {
+              "location": "MyTasksStepDefs.i_write_in_the_bodyBox_below_the_thingsToDo_title_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 775685677,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click addTaskButton",
+            "match": {
+              "location": "MyTasksStepDefs.i_click_addTaskButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5025519572,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Our task should appear on the tasks page",
+            "match": {
+              "location": "MyTasksStepDefs.our_task_should_appear_on_the_tasks_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Tasks menu",
+    "description": "  Agile Story:\n  As a user I should be able to create a task from activity stream.",
+    "id": "tasks-menu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/btrix/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -1,11 +1,13 @@
 package com.btrix.pages;
 
+import com.btrix.utilities.BrowserUtils;
 import com.btrix.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MyTasksPage {
@@ -39,18 +41,30 @@ public class MyTasksPage {
     public WebElement addTaskEnterButton;
 
 
-    @FindBy(xpath = "//table[@id='TASKS_GRID_ROLE_ID_4096_0_ADVANCED_N_table']/tbody/tr/td[3]")
+    @FindBy(xpath = "(//table[@class='main-grid-table'])[1]//tr//td[3]")
     public List<WebElement> titleNames;
 
-    public String newTaskVerify(String expectedTaskTitle) {
+
+//    @FindBy(xpath = "//a[@class='task-title task-status-text-color-accepted']")
+//    public List<WebElement> taskTitleLinks;
+
+//xpath = "//table[@id='TASKS_GRID_ROLE_ID_4096_0_ADVANCED_N_table']/tbody/tr/td[3]"
+
+    public List<String> newTaskVerify() {
+//       int c= Driver.get().findElements(By.xpath("//a[@class='task-title task-status-text-color-accepted']")).size();
+//        System.out.println("COUNTTTTTT: "  + c);
+//        Driver.get().findElements(By.xpath("//a[@class='task-title task-status-text-color-accepted']")).forEach(el -> System.out.println(el.getText()));
+
         int numberOfTasks = titleNames.size();
         System.out.println("numberOfTasks = " + numberOfTasks);
-        String tasksListTitle = null;
+      //  System.out.println("taskTitleLinks = " + taskTitleLinks.size());
 
-        for (int i=0; i<numberOfTasks; i++) {
-            if (titleNames.get(i).getText().contains(expectedTaskTitle)){
-                tasksListTitle = titleNames.get(i).getText();
-            }
+        List<String> tasksListTitle = new ArrayList<>();
+
+        for (int i=0; i<titleNames.size(); i++) {
+
+            tasksListTitle.add(titleNames.get(i).getText());
+
         }
         return tasksListTitle;
     }

@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.btrix.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 47.577 s <<< FAILURE! - in com.btrix.runners.CukesRunner
+Go to Chat and Calls as a helpdesk(Navigation menu options)  Time elapsed: 24.644 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for title to be "Portal". Current title: "EULA violation" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Metins-MacBook-Pro-2.local', ip: '2600:8806:6202:3600:7473:10b:2d40:3f67%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: /var/folders/38/wpb6_p291t3...}, goog:chromeOptions: {debuggerAddress: localhost:53315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3b5cd106c15ce65157dd165e86071d3c
+

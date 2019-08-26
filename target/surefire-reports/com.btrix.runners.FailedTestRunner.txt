@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.btrix.runners.FailedTestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.btrix.runners.FailedTestRunner
+initializationError(com.btrix.runners.FailedTestRunner)  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalArgumentException: Not a file or directory: /Users/metinkaya/IdeaProjects/va_mky_btrix_cucumber/target/rerun.txt
+

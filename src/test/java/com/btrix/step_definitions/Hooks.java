@@ -37,7 +37,7 @@ public class Hooks {
             scenario.embed(screenshot, "image/png");
         }
         Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-       // Driver.closeDriver();
+        Driver.closeDriver();
     }
 
     @After("@database")

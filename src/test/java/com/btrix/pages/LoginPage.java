@@ -1,7 +1,9 @@
 package com.btrix.pages;
 
+import com.btrix.utilities.BrowserUtils;
 import com.btrix.utilities.ConfigurationReader;
 import com.btrix.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,37 +16,41 @@ public class LoginPage {
         PageFactory.initElements(Driver.get(), this);
     }
 
-    @FindBy(name="USER_LOGIN")
+    @FindBy(name = "USER_LOGIN")
     WebElement usernameBox;
 
-    @FindBy(name="USER_PASSWORD")
+    @FindBy(name = "USER_PASSWORD")
     WebElement passwordBox;
 
     @FindBy(css = "input[class=login-btn]")
     WebElement logInButton;
 
-    public void login(String userType){
+    public void login(String userType) {
         String username = null;
         String password = null;
         if (userType.equalsIgnoreCase("helpdesk")) {
             username = ConfigurationReader.get("helpdesk_username");
             password = ConfigurationReader.get("helpdesk_password");
-        }else if (userType.equalsIgnoreCase("hr")) {
+        } else if (userType.equalsIgnoreCase("hr")) {
             username = ConfigurationReader.get("hr_username");
             password = ConfigurationReader.get("hr_password");
-        }else if(userType.equalsIgnoreCase("marketing")) {
+        } else if (userType.equalsIgnoreCase("marketing")) {
             username = ConfigurationReader.get("marketing_username");
             password = ConfigurationReader.get("marketing_password");
-        }else{
+        } else {
             System.out.println("invalid username or password!");
         }
 
+        BrowserUtils.waitForPageToLoad(10);
+
         usernameBox.sendKeys(username);
         passwordBox.sendKeys(password);
+        BrowserUtils.verifyElementDisplayed(logInButton);
         logInButton.click();
 
-        WebDriverWait wait = new WebDriverWait(Driver.get(), 5);
+        WebDriverWait wait = new WebDriverWait(Driver.get(), 20);
         wait.until(ExpectedConditions.titleIs("Portal"));
+
 
     }
 

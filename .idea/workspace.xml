@@ -2,13 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96c6c941-778e-44bd-996f-bd9071bb8c62" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/btrix/step_definitions/NavigationMenuStepDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/com/btrix/features/NavigationMenu.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/btrix/pages/MyTasksPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/btrix/pages/MyTasksPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/btrix/step_definitions/MyTasksStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/btrix/step_definitions/MyTasksStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/btrix/pages/ActivityStreamPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/btrix/pages/ActivityStreamPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/btrix/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/btrix/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/btrix/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/btrix/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/btrix/runners/FailedTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/btrix/runners/FailedTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/btrix/step_definitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/btrix/step_definitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/com/btrix/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/com/btrix/features/Login.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/embedded0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/return.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/return.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/pages/ActivityStreamPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/pages/ActivityStreamPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/pages/LoginPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/pages/MyTasksPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/pages/MyTasksPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/pages/NewTaskPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/runners/CukesRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/runners/CukesRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/runners/FailedTestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/runners/FailedTestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/step_definitions/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/step_definitions/Hooks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/step_definitions/MyTasksStepDefs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/step_definitions/MyTasksStepDefs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/step_definitions/NewTaskStepDefs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/utilities/BrowserUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/utilities/BrowserUtils$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/utilities/BrowserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/utilities/BrowserUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/utilities/ConfigurationReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/utilities/ConfigurationReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/btrix/utilities/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/btrix/utilities/Driver.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +56,7 @@
   <component name="ProjectId" id="1PoDmeQRocIJo5ZwZ8ZtgOD0tOS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/btrix/utilities" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/com/btrix/features" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -47,6 +67,7 @@
       <recent name="com.btrix.runners" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/com/btrix/features" />
       <recent name="$PROJECT_DIR$/src/test/java/com/btrix/utilities" />
     </key>
   </component>
@@ -62,7 +83,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CukesRunner">
     <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="va_mky_btrix_cucumber" />
       <extension name="coverage">
@@ -78,9 +99,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FailedTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="va_mky_btrix_cucumber" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.btrix.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.btrix.runners" />
+      <option name="MAIN_CLASS_NAME" value="com.btrix.runners.FailedTestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="JUnit.FailedTestRunner" />
       </list>
     </recent_temporary>
   </component>

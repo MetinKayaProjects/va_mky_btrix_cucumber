@@ -8,7 +8,6 @@ Feature: Tasks menu
   Scenario: Create new task
     Given I am on the login page
     When I login as a "helpdesk"
-#    And I click on the tasks tab plus symbol
     And I click on the tasks button
     And I click on the new task button
     And I write in the thingsToDo title box

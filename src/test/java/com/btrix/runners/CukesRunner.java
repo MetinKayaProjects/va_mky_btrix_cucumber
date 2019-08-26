@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                  },
         features = "src/test/resources/com/btrix/features/",
         glue = "com/btrix/step_definitions",
-        tags = "@login",
+        tags = "@navigation",
         dryRun = false
         )
 

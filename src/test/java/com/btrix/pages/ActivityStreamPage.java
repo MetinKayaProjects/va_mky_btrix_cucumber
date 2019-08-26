@@ -1,6 +1,8 @@
 package com.btrix.pages;
 
+import com.btrix.utilities.BrowserUtils;
 import com.btrix.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,19 +14,26 @@ public class ActivityStreamPage {
         PageFactory.initElements(Driver.get(),this);
     }
 
-//BURAYA METHOD YAZ... SOLDAKI MENULARE METOD GOTURSUN
 
     @FindBy(xpath = "//span[@class='menu-item-link-text'][contains(text(), 'Tasks')]")
     public WebElement tasksButton;
 
-//***********************Sign Button is not located! ******************************************
-    @FindBy(xpath = "//*[@id=\"bx_left_menu_menu_tasks\"]/span[1]")
-    public WebElement plusSign;
-//********************************************************************************************
+    public WebElement getTab(String tab) {
+        BrowserUtils.verifyElementDisplayed(moreHidden);
+        moreHidden.click();
+        String tabXpath = "//span[@class='menu-item-link-text'][contains(text(), '" + tab + "')]";
+       WebElement tabMenu =Driver.get().findElement(By.xpath(tabXpath));
+        return tabMenu;
+    }
 
+    @FindBy(css = "[id=user-name]")
+    public WebElement toLogout;
 
+    @FindBy(xpath = "//a[@class='menu-popup-item menu-popup-no-icon ']/span[contains(text(), 'Log out')]")
+    public WebElement logout;
 
-
+    @FindBy(xpath = "//span[@class=\"menu-favorites-more-text\"][contains(text(), 'More')]")
+    public WebElement moreHidden;
 
 
 

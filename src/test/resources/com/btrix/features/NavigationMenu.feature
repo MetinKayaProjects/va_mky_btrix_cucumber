@@ -9,10 +9,10 @@ Feature: Navigation menu options
 
 
     Examples:helpdesk
-      | user     | tab             | pageTitle |
-      | helpdesk | Activity Stream | Portal    |
-      | helpdesk | Task             | My tasks                                |
-      | helpdesk | Chat and Calls   | Chat and Calls                          |
+      | user     | tab             | pageTitle        |
+      | helpdesk | Activity Stream | Portal           |
+      | helpdesk | Task            | My tasks         |
+      | helpdesk | Chat and Calls  | Chat and Calls   |
 #      | helpdesk | Workgroups       | Workgroups and projects                 |
 #      | helpdesk | Drive            | My Drive                                |
 #      | helpdesk | Calendar         | helpdesk71@cybertekschool.com: Calendar |
@@ -22,5 +22,5 @@ Feature: Navigation menu options
 #      | helpdesk | Employees        | Company Structure                       |
 #      | helpdesk | Services         | Meeting Rooms                           |
 #      | helpdesk | Company          | Company                                 |
-      | helpdesk | Applications     | All applications                        |
-      | helpdesk | Workflows        | Assignments                             |
+      | helpdesk | Applications    | All applications |
+      | helpdesk | Workflows       | Assignments      |

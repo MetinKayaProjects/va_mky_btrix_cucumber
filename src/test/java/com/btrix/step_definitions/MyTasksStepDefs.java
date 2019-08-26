@@ -1,18 +1,12 @@
 package com.btrix.step_definitions;
 
-import com.btrix.pages.ActivityStreamPage;
 import com.btrix.pages.MyTasksPage;
-import com.btrix.pages.NewTaskPage;
 import com.btrix.utilities.BrowserUtils;
 import com.btrix.utilities.Driver;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MyTasksStepDefs {
@@ -46,10 +40,6 @@ public class MyTasksStepDefs {
         myTasksPage.addTaskEnterButton.click();
     }
 
-
-
-
-
     @Then("Our task should appear on the tasks page")
     public void our_task_should_appear_on_the_tasks_page() {
         Driver.get().switchTo().defaultContent();
@@ -62,21 +52,17 @@ public class MyTasksStepDefs {
 
         List<String> allNewTAsks = myTasksPage.newTaskVerify();
 
-
         String actualNewTask = null;
-       for (int i=0; i<myTasksPage.titleNames.size(); i++){
-          if(allNewTAsks.get(i).contains(expectedNewTask)){
-              actualNewTask = allNewTAsks.get(i);
-          }
-       }
+        for (int i = 0; i < myTasksPage.titleNames.size(); i++) {
+            if (allNewTAsks.get(i).contains(expectedNewTask)) {
+                actualNewTask = allNewTAsks.get(i);
+            }
+        }
 
-       System.out.println("actualNewTask = " + actualNewTask);
-
-
+        System.out.println("actualNewTask = " + actualNewTask);
 
         Assert.assertTrue(actualNewTask.contains(expectedNewTask));
     }
-
 
 
 }
